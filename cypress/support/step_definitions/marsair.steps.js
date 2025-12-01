@@ -33,7 +33,8 @@ Then ('A message containing {string} should be seen', (message) => {
 })
 
 Then ('User inserts a promotional code {string}', (code) => {
-    cy.get('[id="promotional_code"]').clear().type(code);
+    cy.get('[id="promotional_code"]').clear()
+        .type(code);
 })
 
 Then ('A promo message containing {string} is displayed', (text) => {
