@@ -1,7 +1,6 @@
 {
   "dependencies": {
-    "cucumber": "^6.0.7",
-    "cypress": "^15.7.0"
+    "cucumber": "^6.0.7"
   },
   "name": "marsair",
   "version": "1.0.0",
@@ -16,6 +15,7 @@
   "type": "commonjs",
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^24.0.0",
-    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.7"
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.7",
+    "cypress": "^15.7.0"
   }
 }
