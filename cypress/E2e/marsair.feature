@@ -39,3 +39,10 @@ Feature: MarsAir Flight Search
       And User inserts a promotional code "AF3-FJK-419"
       And User searches for flight
       Then A promo message containing "Sorry, code AF3-FJK-419 is not valid" is displayed
+
+    @TC06
+    Scenario: To verify that logo link returns user to home page
+      When User selects "July" as the departing date
+      And User selects "December (next year)" as the return date
+      And User searches for flight
+      Then User clicks on logo and lands on the home page with headings "Welcome to MarsAir!" "Book a ticket to the red planet now!"

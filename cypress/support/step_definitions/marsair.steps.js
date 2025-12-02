@@ -41,3 +41,13 @@ Then ('A promo message containing {string} is displayed', (text) => {
     cy.get('[class="promo_code"]').should('be.visible').and('contain', text)
 })
 
+When ('User clicks on logo and lands on the home page with headings {string} {string}', (h2text, h3text) => {
+    cy.get("[href='/RajbirSingh']").click()
+    cy.url().should('eq', Cypress.config().baseUrl + '/RajbirSingh');
+    cy.get('#content h2').contains(h2text)
+    cy.get('#content h3').contains(h3text)
+    cy.get('[name="departing"]').should('be.visible')
+    cy.get('[name="returning"]').should('be.visible')
+    cy.get('[id="promotional_code"]').should('be.visible')
+    cy.get('input[type="submit"]').should('be.visible')
+})
