@@ -9,7 +9,7 @@ module.exports = defineConfig({
     e2e: {
         baseUrl: 'https://marsair.recruiting.thoughtworks.net',
         specPattern: 'cypress/e2e/*.feature',
-        watchForFileChanges: false,
+        watchForFileChanges: true,
         async setupNodeEvents(on, config) {
             const bundler = createBundler({
                 plugins: [createEsbuildPlugin(config)],
