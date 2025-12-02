@@ -1,4 +1,4 @@
-import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
+import { Given, When, Then } from '@badeball/cypress-cucumber-preprocessor';
 
 Given ('User is on the MarsAir home page', () => {
     cy.visit('/RajbirSingh');

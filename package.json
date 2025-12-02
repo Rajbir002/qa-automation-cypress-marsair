@@ -1,7 +1,5 @@
 {
   "dependencies": {
-    "@badeball/cypress-cucumber-preprocessor": "^24.0.0",
-    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.7",
     "cucumber": "^6.0.7",
     "cypress": "^15.7.0"
   },
@@ -15,5 +13,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^24.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.7"
+  }
 }
